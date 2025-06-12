@@ -1,0 +1,246 @@
+.otp-page-container{
+    /* background-color:var(--background-color); */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-design-div{
+    position: absolute;
+    left: 0px;
+    height: 100vh;
+    width: 50%;
+    /* background-color: #FFC913; */
+    background-color: #007bff;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.otp-container{
+    position: absolute;
+    /* border: 1px solid; */
+    background-color: #fff;
+    height: 100vh;
+    right: 0px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+     animation: SlideIn 1s ease-in-out;
+}
+@keyframes SlideIn {
+    from {
+      opacity: 0;
+      transform: translateX(400px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.otp-div-container{
+    height: fit-content;
+    padding: 20px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+/* .login-container{
+    border: 1px solid;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    box-shadow: 0px 0px 4px #ccc;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+} */
+.otp-div{
+    /* border: 1px solid; */
+    align-self: center;
+    margin-bottom: 20px;
+    /* z-index: 1;
+    position: fixed;
+    right: 30px;
+    top: 30px; */
+}
+.otp-title{
+    /* border: 1px solid; */
+    align-self: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.otp-title h1{
+    font-weight: 800;
+}
+.otp-desc{
+    /* border: 1px solid; */
+    align-self: center;
+    margin-bottom: 28px;
+    letter-spacing: 0.5px;
+}
+.otp-desc p{
+    font-size: 14px;
+    text-align: center;
+    /* text-transform: capitalize; */
+}
+.forgot-pass-form-container{
+    /* border: 1px solid; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+}
+.login-form-field{
+    /* border: 1px solid; */
+    width: 100%;
+    position: relative;
+
+}
+.login-form-field input{
+    padding: 10px 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+    /* background-color:var(--background-color); */
+}
+
+.login-btn-div{
+    width: 100%;
+}
+.login-btn-div button{
+    width: 100%;
+    padding: 8px 12px;
+    /* background-color: #FFC913; */
+    background-color:#1C2657;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.pass-div{
+    position: relative;
+}
+.pass-hidden{
+    color: #a4a4a4;
+}
+.eye-icon{
+    position: absolute;
+    right: 12px;
+    top:8px;
+    cursor: pointer;
+}
+
+.remember-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: auto;
+    /* margin-top: 10px; */
+}
+.remember-div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  
+}
+.remember-div input{
+    cursor: pointer;
+}
+.remember-div input[type='radio']{
+    accent-color: var(--primary-color);
+    outline: none;
+}
+.remember-div span{
+    font-size: 12px;
+}
+.forgot-pass-div{
+    font-size: 12px;
+    cursor: pointer;
+    color: blue;
+}
+.forgot-pass-div:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.login-info-div{
+    text-align: center;
+    /* margin-top: 12px; */
+    font-size: 14px;
+    margin-top: 12px;
+}
+.signup-link{
+    color: rgb(9, 76, 171);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+.otp-form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid ; */
+}
+.otp-email-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.otp-box-input{
+    width: 36px;
+    height: 36px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+}
+.verify-otp-div{
+    font-size: 12px;
+    cursor: default;
+    text-align: center;
+}
+.verify-otp-div span{
+    color: blue;
+}
+.verify-otp-div span:hover{
+    text-decoration: underline;
+   
+    cursor: pointer;
+}
+
+.otp-form button{
+    width: 100%;
+    padding: 10px 12px;
+    /* background-color: #FFC913; */
+    background-color: #1C2657;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    min-height: 36px;
+    position: relative;
+}
